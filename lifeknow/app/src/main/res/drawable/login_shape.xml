@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#ffffff"/><!--颜色-->
+    <corners android:radius="30px"/><!--圆角-->
+    <size android:width="300dp" android:height="35dp"/><!--长宽-->
+    <padding
+        android:bottom="3dp"
+        android:left="3dp"
+        android:right="3dp"
+        android:top="3dp" /><!--字体与边框的间距-->
+
+</shape>

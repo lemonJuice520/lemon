@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.kb.adapter.SportOneadapter">
+
+    <ImageView
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/img_head"
+        android:layout_gravity="center_vertical"
+        android:src="@android:mipmap/sym_def_app_icon" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:id="@+id/txt_sport_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text="活动标题"/>
+        <TextView
+            android:id="@+id/txt_sport_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="时间：2016-06-01"/>
+        <TextView
+            android:id="@+id/txt_sport_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="地址：重庆大学A区"/>
+        <TextView
+            android:id="@+id/txt_sport_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="活动简介"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kb.lifeknow">
+
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 允许使用PowerManager的 WakeLocks保持进程在休眠时从屏幕消失 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+
+    <application
+        android:name="com.kb.location.LocationApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.kb.firstitem.News.NeighborhoodNewsActivity" />
+        <activity android:name="com.kb.firstitem.News.NewsInfoActivity" />
+        <activity android:name="com.kb.firstitem.Framer.FarmersActivity" />
+        <activity android:name="com.kb.firstitem.Framer.ShopActivity" />
+        <activity android:name="com.kb.firstitem.cate.CateActivity" />
+        <activity android:name="com.kb.firstitem.Sport.SportsActivity" />
+        <activity android:name="com.kb.firstitem.EntertainmentActivity" />
+        <activity android:name="com.kb.firstitem.OilsGroceryActivity" />
+        <activity android:name="com.kb.firstitem.HomeDepotActivity" />
+        <activity android:name="com.kb.firstitem.Housekepping.HousekeepingActivity" />
+        <activity android:name="com.kb.firstitem.Housekepping.HouseKeepingInfoActivity" />
+        <activity android:name="com.kb.firstitem.CommunityservcesActivity" />
+        <activity android:name="com.kb.mineactivity.LoginActivity" />
+        <activity android:name="com.kb.mineactivity.RegistActivity" />
+        <activity android:name="com.kb.mineactivity.BasicsActivity" />
+        <activity android:name="com.kb.mineactivity.MyOrdersActivity" />
+        <activity android:name="com.kb.mineactivity.MyInfomationActivity" />
+        <activity android:name="com.kb.mineactivity.ApplyStationmasterActivity" />
+        <activity android:name="com.kb.mineactivity.ForgotPasswordActivity" />
+        <activity android:name="com.kb.mineactivity.MyFansActivity" />
+        <activity android:name="com.kb.mineactivity.AttentionActivity" />
+        <activity android:name="com.kb.mineactivity.PlatformActivity" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="0YHuvZMfy3mkPLK3DijrLZLhe0f2czCz" />
+
+    </application>
+
+</manifest>

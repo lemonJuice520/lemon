@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kb.fragment.CollectFragment.MyCollectFragment">
+
+
+   <include android:id="@+id/collect_back"
+       layout="@layout/titlebar"/>
+
+    <LinearLayout
+        android:id="@+id/btn_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/collect_back"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_goods"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_shape_left"
+            android:text="商品"/>
+        <Button
+            android:id="@+id/btn_store"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_shape_right"
+            android:text="商铺"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txt_collect_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btn_title"
+        android:text="你收藏了4个商品"/>
+    <TextView
+        android:id="@+id/change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/btn_title"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/colorBlue"
+        android:text="编辑"/>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_collect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txt_collect_all">
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    
+    <color name="transparent">#0000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#222</color>
+    <color name="colortitle">#cc2</color>
+    <color name="back_ground">#e3e8ea</color>
+    <color name="colorRed">#ff00</color>
+    <color name="colorBlue">#070796</color>
+    <color name="skyblue">#87ceeb</color>
+    <color name="colorchrysanthemumyellow">#FF8000</color>
+
+    <color name="colorlFewnchgrey">#D0CACD</color>
+    <color name="edt_hint">#AAAAAA</color>
+    <color name="bgcolor">#f0f0f0</color>
+    <color name="white">#ffffff</color>
+    <color name="remark">#555555</color>
+    <color name="canlendar_text_color">#323232</color>
+
+
+
+
+</resources>

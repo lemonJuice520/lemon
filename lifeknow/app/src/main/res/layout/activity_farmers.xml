@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/R_top"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/colortitle"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/img_farmers_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@mipmap/back_white" />
+
+        <EditText
+            android:id="@+id/edit_query"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/img_farmers_back"
+            android:layout_toLeftOf="@+id/imgb_more"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:hint="@string/my_edit_search"
+            android:drawableRight="@mipmap/timeline_icon_search"
+            android:textColorHint="#aaa"
+            android:background="@drawable/bg_edittext"
+            android:drawablePadding="10dp"
+        />
+
+        <ImageButton
+            android:id="@+id/imgb_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/share"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/R_top"
+        android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/R_img"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.kb.view.FristViewPager
+                    android:id="@+id/view_farme"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp">
+                </com.kb.view.FristViewPager>
+                <LinearLayout
+                    android:id="@+id/lin_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#77000000"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_alignBottom="@id/view_farme">
+                    <TextView
+                    android:id="@+id/intro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="我是文本" />
+                    <LinearLayout
+                    android:id="@+id/dots"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal" />-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/r_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:orientation="horizontal"
+                    android:background="@color/colorlFewnchgrey">
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/list_shop"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:listSelector="#00000000">
+
+                </ListView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

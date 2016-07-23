@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kb.mineactivity.MyInfomationActivity">
+
+
+    <include android:id="@+id/info_back"
+        layout="@layout/titlebar"/>
+
+    <TextView
+        android:id="@+id/txt_gou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/info_back"
+        android:textColor="@color/colorBlack"
+        android:text="你购买的宝贝"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txt_gou"
+        android:layout_alignBottom="@+id/txt_gou"
+        android:layout_marginLeft="20dp"
+        android:text="有1个物流变化"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txt_gou"
+        android:layout_marginTop="10dp"
+        android:background="@color/remark"/>
+    <ListView
+        android:id="@+id/list_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/view">
+
+    </ListView>
+
+
+</RelativeLayout>

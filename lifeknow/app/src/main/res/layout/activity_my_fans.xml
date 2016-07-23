@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    tools:context="com.kb.mineactivity.MyFansActivity">
+    <include android:id="@+id/fans_back"
+        layout="@layout/titlebar"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@+id/fans_back"
+        android:textSize="@dimen/tweenty"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:text="发送消息"
+        android:id="@+id/textView2" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:checked="false" />
+
+    <EditText
+        android:id="@+id/edt_shuru"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edt_regist_shape"
+        android:layout_below="@+id/switch1"/>
+
+    <ListView
+        android:id="@+id/list_fans"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_shuru"
+        android:layout_marginTop="10dp">
+
+    </ListView>
+
+</RelativeLayout>

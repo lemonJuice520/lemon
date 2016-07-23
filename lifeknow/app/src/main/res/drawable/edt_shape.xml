@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- 连框颜色值 -->
+<item>
+    <shape>
+        <solid android:color="@color/colortitle" />
+        <corners android:radius="30px"/><!--圆角-->
+        <size android:width="220dp" android:height="35dp"/><!--长宽-->
+        <padding
+            android:bottom="1dp"
+            android:left="1dp"
+            android:right="1dp"
+            android:top="1dp" /><!--字体与边框的间距-->
+    </shape>
+</item>
+<!-- 主体背景颜色值 -->
+<item>
+    <!--边框里面背景颜色 白色-->
+    <shape>
+        <solid android:color="@color/colorWhite" />
+        <corners android:radius="30px"/><!--圆角-->
+        <size android:width="220dp" android:height="35dp"/><!--长宽-->
+        <padding
+            android:bottom="3dp"
+            android:left="3dp"
+            android:right="3dp"
+            android:top="3dp" /><!--字体与边框的间距-->
+    </shape>
+</item>
+</layer-list>

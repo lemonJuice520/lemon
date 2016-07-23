@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.kb.fragment.First.FristFragment">
+    <RelativeLayout
+        android:id="@+id/re_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/colortitle">
+        <RelativeLayout
+            android:id="@+id/re_first_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/txt_frist_local"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxEms="3"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_marginLeft="5dp"/>
+            <ImageView
+                android:id="@+id/up_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:layout_toRightOf="@+id/txt_frist_local"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/down"/>
+        </RelativeLayout>
+
+
+
+        <EditText
+            android:id="@+id/edt_frist_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@mipmap/timeline_icon_search"
+            android:textColorHint="@color/colorlFewnchgrey"
+            android:drawablePadding="10dp"
+            android:hint="@string/my_edit_search"/>
+
+
+        <ImageButton
+            android:id="@+id/img_first_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/share" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/re_search">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <com.kb.view.FristViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp">
+                </com.kb.view.FristViewPager>
+                <LinearLayout
+                    android:id="@+id/lin_view"
+                    android:layout_alignBottom="@id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#77000000"
+                    android:padding="8dp"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:id="@+id/tv_intro"
+                        android:text="我是文本" />
+                    <LinearLayout
+                        android:id="@+id/dot_layout"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <com.kb.view.MyGridView
+                android:id="@+id/grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnWidth="80dp"
+                android:horizontalSpacing="10dp"
+                android:verticalSpacing="15dp"
+                android:numColumns="3"
+                android:background="#aad">
+
+            </com.kb.view.MyGridView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

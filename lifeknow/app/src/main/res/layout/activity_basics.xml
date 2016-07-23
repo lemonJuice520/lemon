@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/back_ground"
+    tools:context="com.kb.mineactivity.BasicsActivity">
+
+    <include android:id="@+id/platform_title"
+        layout="@layout/titlebar"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txt_basic_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/tweenty"
+            android:text="头        像："/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_launcher"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:padding="10dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txt_basic_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tweenty"
+            android:text="真实姓名："/>
+
+        <EditText
+            android:id="@+id/edt_basic_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="请输入真实名字"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txt_basic_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tweenty"
+            android:text="性        别："/>
+
+        <RadioButton
+            android:id="@+id/rb_basic_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textSize="@dimen/tweenty"
+            android:text="男"/>
+        <RadioButton
+            android:id="@+id/rb_basic_lady"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textSize="@dimen/tweenty"
+            android:text="女"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="10dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txt_basic_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tweenty"
+            android:text="出生年月："/>
+
+        <Spinner
+            android:id="@+id/sp_basic_year"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/tweenty"
+            android:text="年"/>
+        <Spinner
+            android:id="@+id/sp_basic_month"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/tweenty"
+            android:text="月"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="10dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txt_basic_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tweenty"
+            android:text="居住地址："/>
+
+        <EditText
+            android:id="@+id/edt_basic_addr"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="请填写正确的地址"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

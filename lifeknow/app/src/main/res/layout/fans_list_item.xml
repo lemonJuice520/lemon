@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor">
+        <ImageView
+            android:id="@+id/img_fans"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_fans"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="10dp"
+            android:text="莉莉"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/txt_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/img_fans"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/txt_name"
+            android:text="电话：15523961391"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/txt_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_fans"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/txt_phone"
+            android:text="地址：康居西城"
+            android:textSize="12dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_alignBottom="@+id/txt_phone"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.01dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorlFewnchgrey">
+    </View>
+</RelativeLayout>

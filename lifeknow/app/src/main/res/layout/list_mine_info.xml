@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    tools:context="com.kb.adapter.MineInfoAdapter">
+
+    <ImageView
+        android:id="@+id/img_info_gou"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@mipmap/qq"/>
+    <TextView
+        android:id="@+id/txt_info_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订单号：123456789456123"
+        android:layout_toRightOf="@+id/img_info_gou"
+        android:layout_marginLeft="20dp"
+        android:layout_alignTop="@+id/img_info_gou"
+        android:ellipsize="middle"/>
+    <TextView
+        android:id="@+id/txt_info_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="物流状态(签收或地点)"
+        android:layout_toRightOf="@+id/img_info_gou"
+        android:layout_below="@+id/txt_info_num"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:ellipsize="middle"/>
+    <TextView
+        android:id="@+id/txt_info_see"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="去看看"
+        android:layout_toRightOf="@+id/img_info_gou"
+        android:layout_alignBottom="@+id/img_info_gou"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/colorRed"
+        android:ellipsize="middle"/>
+</RelativeLayout>

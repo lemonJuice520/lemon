@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kb.lifeknow.MainActivity">
+
+
+    <com.kb.view.ContentViewPager
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lin_bottom">
+
+    </com.kb.view.ContentViewPager>
+
+    <LinearLayout
+        android:id="@+id/lin_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#D0CACD"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/re_first"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_one"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/txt_homepage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_one"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="首页"
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.01dp"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF" />
+
+        <RelativeLayout
+            android:id="@+id/re_collect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_two"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/txt_collect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_two"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="收藏"
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.01dp"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF" />
+
+        <RelativeLayout
+            android:id="@+id/re_mine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_three"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/txt_my"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_three"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="我的"
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

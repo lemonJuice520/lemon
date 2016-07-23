@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kb.firstitem.OilsGroceryActivity">
+
+    <include android:id="@+id/oil_title"
+        layout="@layout/titlebar1"/>
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/hudie"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Spinner
+            android:id="@+id/sp_1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+        <Spinner
+            android:id="@+id/sp_2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_oils"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"></ListView>
+
+</LinearLayout>

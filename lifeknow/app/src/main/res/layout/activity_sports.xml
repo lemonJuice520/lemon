@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground"
+    tools:context="com.kb.firstitem.Sport.SportsActivity">
+
+    <include
+        android:id="@+id/re_sport_title"
+        layout="@layout/titlebar"/>
+    <RelativeLayout
+        android:id="@+id/re_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_below="@+id/re_sport_title"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/txt_local_sport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="本地活动"
+            android:layout_marginLeft="10dp" />
+        <View
+            android:id="@+id/view_left"
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@color/colorBlack"
+            android:layout_toRightOf="@+id/txt_local_sport"/>
+        <TextView
+            android:id="@+id/txt_new_sport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="新闻赛事"/>
+        <View
+        android:id="@+id/view_right"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@color/colorBlack"
+        android:layout_toRightOf="@+id/txt_new_sport"/>
+        <TextView
+            android:id="@+id/re_ticket_sport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:text="体育门票"/>
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_sport"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/re_titlebar">
+
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>
